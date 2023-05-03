@@ -1,16 +1,14 @@
-import "./ImageSlide.css"; 
+import "./ImageSlide.css";
 
 interface ImageProps {
   imagePath: string;
 }
 
 function ImageSlide({ imagePath }: ImageProps) {
-
   return (
-    <div className="imageContainer">
+    <div>
       <img src={imagePath} className="slideImage" />
     </div>
   );
 }
-
 export default ImageSlide;
