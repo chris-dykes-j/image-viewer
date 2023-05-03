@@ -1,0 +1,15 @@
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  height: 100vh;
+}
+
+.slideImage {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
