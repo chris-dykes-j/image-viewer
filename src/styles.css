@@ -25,7 +25,8 @@
 */
 
 * {
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
   background: black;
+  overflow-y: hidden; /* Weird scroll issue fix. Will need changed, for zooming. */
 }

@@ -2,12 +2,13 @@ import "./ImageSlide.css";
 
 interface ImageProps {
   imagePath: string;
+  className: string;
 }
 
-function ImageSlide({ imagePath }: ImageProps) {
+function ImageSlide({ imagePath, className }: ImageProps) {
   return (
     <div>
-      <img src={imagePath} className="slideImage" />
+      <img src={imagePath} className={`slideImage ${className}`}/>
     </div>
   );
 }

@@ -1,8 +1,14 @@
 .imageContainer {
   display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+  align-content: space-between;
+}
+
+.gridImageContainer {
+  display: grid;
 }
