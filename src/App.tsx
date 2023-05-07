@@ -1,22 +1,26 @@
 import ImageSlide from "./ImageSlide";
 import "./App.css";
+import img from '/home/chris/coding/image-viewer/public/images/dVbbJ4K.jpeg';
+import { open } from "@tauri-apps/api/dialog";
 
 function App() {
 
-  const imageSources: Array<string> = [
+  let imageSources: Array<string> = [
     'images/Fe5sYsdUoAAujyH.jpg',
-    'images/qgkm3w0yc7ca1.jpg',
-//    'images/S1_8mdEyrUItFP1ZkVv8njgZ69movMqOM-b_tcv_tGE.webp',
-//    'images/dVbbJ4K.jpeg',
+    'images/Fe5sYsdUoAAujyH.jpg',
 //    'images/Fe5sYsdUoAAujyH.jpg',
+    'images/Fe5sYsdUoAAujyH.jpg',
+//    img, // works!
   ];
 
   return (
-      <div className="imageContainer">
-        {imageSources.map((src, index) => (
-          <ImageSlide key={index} imagePath={src} className=""/>
-        ))}
-      </div>
+      <>
+        <div className="imageContainer columnView">
+          {imageSources.map((src, index) => (
+            <ImageSlide key={index} imagePath={src} className=""/>
+          ))}
+        </div>
+      </>
   );
 }
 

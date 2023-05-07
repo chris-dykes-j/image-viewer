@@ -1,14 +1,31 @@
 .imageContainer {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
   width: 100vw;
-  align-content: space-between;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.gridImageContainer {
-  display: grid;
+.columnView {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: center;
 }
+
+/*
+.gridLeftView { 
+
+}
+
+.gridRightView { 
+
+}
+
+.rowView {
+
+}
+
+/*
+  flex-wrap: wrap;
+  align-items: center;
+
+*/

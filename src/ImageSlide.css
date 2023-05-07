@@ -1,8 +1,15 @@
 .slideImage {
   height: 100vh;
   width: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
-.smaller {
-  height: 50vh;
+.twoImages {
+
 }
+
+/*
+  object-fit: contain; To maintain width.
+  object-fit: cover; To alter width.
+*/
